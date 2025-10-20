@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+}
+
+img{
+    width: 100%;
+}
+
+.left-side{
+    border-right: 1px solid black;
+    width: 30%;
+}
