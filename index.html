@@ -15,9 +15,9 @@
         </div>
         <div class="right-header">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Certificates</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificates">Certificates</a></li>
             </ul>
         </div>
     </header>
@@ -33,15 +33,36 @@
             </a>
         </aside>
         <main class="right-side">
-            <section class="main-section">
+            <section class="main-section" id="home">
                 <h1>Hello, I'm <span class="name">Georgi Georgiev</span></h1>
                 <p>A Software Engineering student at SoftUni, specializing in Python and web development. Passionate about creating real-world projects and constantly improving my skills to grow in the tech industry.</p>
             </section>
-            <section class="card">
-                
+            <section class="card about" id="about">
+                <p class="about-text">I am a Software Engineering student with over <span class='name'>2 years</span> of experience working with <span class='name'>Python</span>, <span class='name'>JavaScript</span>, <span class='name'>HTML</span>, <span class='name'>CSS</span>, and <span class='name'>PostgreSQL</span>. I have practical experience developing web applications using <span class='name'>Django</span>, version control with <span class='name'>Git/GitHub</span>, and setting up CI pipelines with <span class='name'>Jenkins</span>. Throughout my training, I have built real projects that involve backend logic, database structure, and clean, user-focused UI implementation. I am highly motivated to continue growing in the software development field, learn modern technologies, and contribute to meaningful and well-structured products.</p>
             </section>
-            <section class="card">
-                
+            <section class="card certificates" id="certificates">
+                <div class="certificate-slider">
+                    <button class="btn prev">❮</button>
+
+                        <div class="certificates-list">
+                            <img src="images/Programming Basics - October 2023 - Certificate.jpeg" class="active" alt="">
+                            <img src="images/Programming Fundamentals with Python - January 2024 - Certificate.jpeg" alt="">
+                            <img src="images/Python Advanced - May 2024 - Certificate.jpeg" alt="">
+                            <img src="images/Python OOP - June 2024 - Certificate.jpeg" alt="">
+                            <img src="images/HTML & CSS - September 2024 - Certificate.jpeg" alt="">
+                            <img src="images/JS Front-End - October 2024 - Certificate.jpeg" alt="">
+                            <img src="images/PostgreSQL - January 2025 - Certificate.jpeg" alt="">
+                            <img src="images/Python ORM - February 2025 - Certificate.jpeg" alt="">
+                            <img src="images/Django Basics - May 2025 - Certificate.jpeg" alt="">
+                            <img src="images/Django Advanced - June 2025 - Certificate.jpeg" alt="">
+                        </div>
+
+                    <button class="btn next">❯</button>
+
+                </div>
+                <div class="cert-index">
+                    <span id="current">1</span> / <span id="total">10</span>
+                </div>
             </section>
             <section class="card">
                 
