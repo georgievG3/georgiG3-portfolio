@@ -8,6 +8,14 @@
     font-style: normal;
 }
 
+body{
+    background: #f5feff;
+    background: -webkit-linear-gradient(90deg, rgba(245, 254, 255, 1) 0%, rgba(250, 245, 245, 1) 50%, rgba(235, 250, 255, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(245, 254, 255, 1) 0%, rgba(250, 245, 245, 1) 50%, rgba(235, 250, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(245, 254, 255, 1) 0%, rgba(250, 245, 245, 1) 50%, rgba(235, 250, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F5FEFF", endColorstr="#EBFAFF", GradientType=1);
+}
+
 .main-container{
     width: 100%;
     display: flex;
@@ -15,10 +23,12 @@
 
 img{
     width: 70%;
+    box-shadow: -1px -1px 36px 0px rgba(156,141,141,0.75);
+-webkit-box-shadow: -1px -1px 36px 0px rgba(156,141,141,0.75);
+-moz-box-shadow: -1px -1px 36px 0px rgba(156,141,141,0.75);
 }
 
 .left-side{
-    border-right: 1px solid black;
     width: 40%;
     height: 100vh;
     display: flex;
@@ -28,8 +38,19 @@ img{
     gap: 10px;
 }
 
+.contact-btns a{
+    color: black;    
+}
+
 .contact-btns i{
-    font-size: 35px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btns i:hover{
+    color: #1D546C;
+    transition: 0.3s;
 }
 
 .contact-btns{
@@ -38,11 +59,20 @@ img{
 }
 
 .download-cv{
-    padding: 20px;
+    padding: 20px 30px;
+    font-size: 24px;
     border-radius: 20px;
-    border: 1px solid black;
     text-decoration: none;
-    color: black;
+    color: #1D546C;
+    border: 2px solid #1D546C;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.download-cv:hover{
+    color: white;
+    background-color: #1D546C;
+    transition: 0.3s;
 }
 
 .right-side{
@@ -66,26 +96,64 @@ img{
 }
 
 h1{
-    font-size: 56px;
+    font-size: 52px;
 }
 
 header{
-    font-size: 24px;
+    font-size: 26px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    padding: 20px 120px;
+    height: 100px;
+    padding: 0 120px;
+    color: black;
+    background-color: white;
 }
 
 .left-header{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
+    cursor: pointer;
+}
+
+.left-header p:nth-of-type(1){
+    background-color: #1D546C;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.left-header p:nth-of-type(2){
+    font-weight: bold;
 }
 
 .right-header ul{
     display: flex;
     list-style-type: none;
-    gap: 10px;
+    gap: 30px;
+}
+
+.right-header ul li{
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.right-header ul li:hover{
+    cursor: pointer;
+    color: #1D546C;
+    transition: 0.3s;
+}
+
+.name{
+    color: #1D546C;
+    font-weight: bold;
 }
