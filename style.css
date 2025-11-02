@@ -232,7 +232,93 @@ header .right-header ul li a.active {
     text-align: center;
     font-size: 18px;
     color: #1D546C;
-    font-weight: 500;
+    font-weight: 500;   
 }
 
+@media (max-width:425px){
+    .main-container{
+        flex-direction: column;
+    }
 
+    .left-side{
+        width: 100%;
+        position: static;
+        height: 100vh;
+    }
+
+    .right-side{
+        margin-left: 0;
+        width: 100%;
+        gap: 200px;
+    }
+
+    .main-section{
+        width: 100%;
+        height: auto;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    .download-cv{
+        font-size: 22px;
+    }
+
+    .main-section p{
+        font-size: 18px;
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .about-text{
+        font-size: 18px;
+    }
+
+    .certificate-slider{
+        gap: 10px;
+        padding: 100px 10px 30px 10px;
+    }
+
+    .btn{
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    header{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .right-header ul{
+        gap: 0;
+    }
+
+    #home{
+        scroll-margin-top: 700px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .main-section{
+        height: 150vh;
+    }
+
+    .right-side{
+        width: 100%;
+        margin-left: 500px;
+        gap: 200px;
+    }
+
+    .left-side{
+        height: 150vh;
+    }
+
+    body{
+        background: #f5feff;
+        background: -webkit-linear-gradient(90deg, rgba(245, 254, 255, 1) 0%, rgba(250, 245, 245, 1) 50%, rgba(235, 250, 255, 1) 100%);
+        background: -moz-linear-gradient(90deg, rgba(245, 254, 255, 1) 0%, rgba(250, 245, 245, 1) 50%, rgba(235, 250, 255, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F5FEFF", endColorstr="#EBFAFF", GradientType=1);
+    }
+    
+}
